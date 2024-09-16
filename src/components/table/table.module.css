@@ -1,0 +1,84 @@
+.table {
+  width: 74vw;
+  background-color: #fff;
+  table-layout: fixed;
+  border-radius: 15px 15px 0px 0px;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.table thead {
+  display: block;
+}
+
+.table tbody {
+  display: block;
+  height: calc(100vh - 40px - 120px - 8px - 100px - 48px - 8px - 20px - 71px - 16px - 30px - 24px);
+  overflow-y: scroll;
+}
+
+.table th {
+  width: calc(74vw/6 - 10px);
+  background-color: #fff;
+  padding: 15px 0px 15px 10px;
+  text-align: left;
+}
+
+.table th.up {
+  background-image: url("../../assets/up_arrow.png");
+}
+
+.table th.down {
+  background-image: url("../../assets/down_arrow.png");
+}
+
+.table th.default {
+  background-image: url("../../assets/default.png");
+}
+
+th.up,
+th.default,
+th.down {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.table td {
+  width: calc(74vw/6 - 10px);
+  border-top: 1px solid #ddd;
+  padding: 15px 0px 15px 10px;
+}
+
+.table td:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.table td:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.table tbody tr:first-child td {
+  border-top: none;
+}
+
+.table tbody tr:nth-child(n) td {
+  background: #eff0f0;
+}
+
+.table tbody tr:nth-child(2n) td {
+  background: #fff;
+}
+
+.tableSell {
+  width: 80%;
+  border: none;
+}
+
+.table tbody tr:nth-child(2n) .tableSell {
+  background-color: #eff0f0;
+}
+
+.tableSell:focus {
+  outline: none;
+}

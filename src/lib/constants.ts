@@ -1,0 +1,31 @@
+export const categories = [
+  { id: 0, value: '', label: 'Очистить' },
+  { id: 17, value: 'Брюки', label: 'Брюки' },
+  { id: 2, value: 'Ветровка', label: 'Платье' },
+  { id: 18, value: 'Гольфы', label: 'Гольфы' },
+  { id: 1, value: 'Джинсы', label: 'Джинсы' },
+  { id: 14, value: 'Кеды', label: 'Кеды' },
+  { id: 19, value: 'Колготки', label: 'Колготки' },
+  { id: 11, value: 'Костюм', label: 'Костюм' },
+  { id: 13, value: 'Кроссовки', label: 'Кроссовки' },
+  { id: 7, value: 'Куртка', label: 'Куртка' },
+  { id: 4, value: 'Леггинсы', label: 'Леггинсы' },
+  { id: 16, value: 'Носки', label: 'Носки' },
+  { id: 6, value: 'Пальто', label: 'Пальто' },
+  { id: 8, value: 'Платье', label: 'Плащ' },
+  { id: 9, value: 'Плащ', label: 'Ветровка' },
+  { id: 15, value: 'Сапоги', label: 'Сапоги' },
+  { id: 3, value: 'Топ', label: 'Топ' },
+  { id: 12, value: 'Туфли', label: 'Туфли' },
+  { id: 10, value: 'Шорты', label: 'Шорты' },
+  { id: 5, value: 'Юбка', label: 'Юбка' },
+];
+
+export const columns = [
+  { label: 'Баркод', accessor: 'barcode', sortable: true, sortbyOrder: 'asc' },
+  { label: 'Предмет', accessor: 'item', sortable: true },
+  { label: 'Артикул поставщика', accessor: 'supplier_article', sortable: true },
+  { label: 'Размер', accessor: 'size', sortable: true },
+  { label: 'Доступно к заказу', accessor: 'available', sortable: true },
+  { label: 'Товары в пути', accessor: 'transit', sortable: true },
+];
