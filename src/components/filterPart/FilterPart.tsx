@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Box,
   Button,
@@ -28,6 +28,10 @@ const FilterPart = ({
     size: '',
     item: '',
   });
+
+  useEffect(() => {
+    setInitialData(data);
+  }, []);
 
   const handleProductSearch = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
